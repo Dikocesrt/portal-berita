@@ -11,30 +11,6 @@
 
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
 
-    <style>
-        /* width */
-            .custom-scrollbar::-webkit-scrollbar {
-                width: thin;
-            }
-
-            /* Track */
-            .custom-scrollbar::-webkit-scrollbar-track {
-                background: rgba(238, 240, 247, 1); 
-                border: solid 2.5px white;
-            }
-
-            /* Handle */
-            .custom-scrollbar::-webkit-scrollbar-thumb {
-                background: rgba(255, 107, 24, 1);
-                border-radius: 10px;
-            }
-
-            /* Handle on hover */
-            .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-                background: rgba(255, 107, 24, 1); 
-            }
-    </style>
-
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
       @theme {
@@ -73,10 +49,10 @@
 
     <nav class="w-full bg-white mb-8 lg:mb-10 xl:mb-12">
         <div class="w-full max-w-xs lg:max-w-4xl xl:max-w-6xl mx-auto flex flex-row justify-between items-center overflow-x-auto gap-x-4 py-4 px-2 [scrollbar-width:none] hover:[scrollbar-width:thin]">
-            <div class="flex flex-row gap-x-2 py-3 px-8 justify-center items-center rounded-full ring-2 ring-soft-gray hover:ring-primary-orange hover:cursor-pointer hover:duration-300">
+            <a href="" class="flex flex-row gap-x-2 py-3 px-8 justify-center items-center rounded-full ring-2 ring-soft-gray hover:ring-primary-orange hover:cursor-pointer hover:duration-300">
                 <img src="./assets/images/icons/heart.svg" alt="">
                 <p class="font-poppins font-semibold">Health</p>
-            </div>
+            </a>
             <div class="flex flex-row gap-x-2 py-3 px-8 justify-center items-center rounded-full ring-2 ring-soft-gray hover:ring-primary-orange hover:cursor-pointer hover:duration-300">
                 <img src="./assets/images/icons/status-up.svg" alt="">
                 <p class="font-poppins font-semibold">Business</p>
@@ -138,7 +114,7 @@
         </div>
 
         <div class="main-carousel w-full max-w-xs lg:max-w-4xl xl:max-w-6xl mx-auto hidden lg:block">
-            <div class="w-full relative h-[200px] lg:h-[550px] xl:h-[650px] shrink-0 rounded-[20px] overflow-hidden">
+            <div class="w-full relative h-[200px] lg:h-[550px] xl:h-[650px] shrink-0 rounded-[20px] overflow-hidden mr-8">
                 <img src="./assets/images/thumbnails/entertainment/capcut.jpeg" alt="" class="w-full h-[200px] lg:h-[550px] xl:h-[650px] object-cover absolute">
                 <div class="w-full h-[200px] lg:h-[550px] xl:h-[650px] bg-gradient-to-b from-[rgba(0,0,0,0)] to-[rgba(0,0,0,0.9)] absolute z-10"></div>
                 <div class="w-full h-[200px] lg:h-[550px] xl:h-[650px] flex flex-col justify-end absolute z-20 pb-4 px-4 gap-y-1 lg:hidden">
@@ -165,7 +141,7 @@
                 </div>
             </div>
 
-            <div class="w-full relative h-[200px] lg:h-[550px] xl:h-[650px] shrink-0 rounded-[20px] overflow-hidden">
+            <div class="w-full relative h-[200px] lg:h-[550px] xl:h-[650px] shrink-0 rounded-[20px] overflow-hidden mr-8">
                 <img src="./assets/images/thumbnails/entertainment/face.jpeg" alt="" class="w-full h-[200px] lg:h-[550px] xl:h-[650px] object-cover absolute">
                 <div class="w-full h-[200px] lg:h-[550px] xl:h-[650px] bg-gradient-to-b from-[rgba(0,0,0,0)] to-[rgba(0,0,0,0.9)] absolute z-10"></div>
                 <div class="w-full h-[200px] lg:h-[550px] xl:h-[650px] flex flex-col justify-end absolute z-20 pb-4 px-4 gap-y-1 lg:hidden">
