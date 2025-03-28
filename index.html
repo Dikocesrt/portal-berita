@@ -11,6 +11,30 @@
 
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
 
+    <style>
+        /* width */
+            .custom-scrollbar::-webkit-scrollbar {
+                width: thin;
+            }
+
+            /* Track */
+            .custom-scrollbar::-webkit-scrollbar-track {
+                background: rgba(238, 240, 247, 1); 
+                border: solid 2.5px white;
+            }
+
+            /* Handle */
+            .custom-scrollbar::-webkit-scrollbar-thumb {
+                background: rgba(255, 107, 24, 1);
+                border-radius: 10px;
+            }
+
+            /* Handle on hover */
+            .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+                background: rgba(255, 107, 24, 1); 
+            }
+    </style>
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
       @theme {
@@ -81,7 +105,7 @@
     </nav>
 
     <section id="featured" class="w-full bg-white mb-12">
-        <div class="lg:hidden w-full max-w-xs mx-auto overflow-x-scroll overflow-y-hidden h-[230px] flex flex-row gap-x-4 py-2 px-1">
+        <div class="lg:hidden w-full max-w-xs mx-auto overflow-x-auto overflow-y-hidden h-[230px] flex flex-row gap-x-4 py-2 px-1">
             <div class="w-[90%] relative shrink-0 rounded-[20px] overflow-hidden">
                 <img src="./assets/images/thumbnails/entertainment/capcut.jpeg" alt="" class="w-full h-[230px] object-cover absolute inset-0">
                 <div class="w-full h-[230px] bg-gradient-to-b from-[rgba(0,0,0,0)] to-[rgba(0,0,0,0.9)] absolute z-10"></div>
@@ -257,7 +281,7 @@
 
             <div class="flex flex-col p-8 ring ring-soft-gray rounded-[20px] hover:ring-2 hover:ring-primary-orange hover:cursor-pointer hover:duration-300 items-center shrink-0">
                 <img src="./assets/images/photos/photo5.png" alt="" class="w-18 mb-4">
-                <p class="font-poppins font-semibold">Dhi Pakao/p>
+                <p class="font-poppins font-semibold">Dhi Pakao</p>
                 <p class="font-poppins font-regular text-primary-gray">223 News</p>
             </div>
         </div>
